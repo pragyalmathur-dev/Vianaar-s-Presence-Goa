@@ -20,7 +20,7 @@ export default function MapComponent() {
       zoomControl: false, // Custom positioned zoom control below
       attributionControl: false, // Suppress default Leaflet attribution panel
       minZoom: 9,
-      maxZoom: 15,
+      maxZoom: 13,
       maxBounds: L.latLngBounds(
         L.latLng(GOA_BOUNDS.southWest[0], GOA_BOUNDS.southWest[1]),
         L.latLng(GOA_BOUNDS.northEast[0], GOA_BOUNDS.northEast[1])
@@ -114,8 +114,8 @@ export default function MapComponent() {
             </svg>
             <!-- Logo inside the white circle with image error fallback -->
             <div class="logo-inner-wrapper">
-               <img src="/assets/logo/logo.png" 
-                    onerror="if (!this.dataset.fallbackIndex) { this.dataset.fallbackIndex = '1'; this.src = 'https://www.vianaar.com/images/logo.png'; } else if (this.dataset.fallbackIndex === '1') { this.dataset.fallbackIndex = '2'; this.src = 'https://www.vianaar.com/images/logo.svg'; } else if (this.dataset.fallbackIndex === '2') { this.dataset.fallbackIndex = '3'; this.src = '/assets/logo/logo.svg'; } else { this.style.display = 'none'; this.nextElementSibling.style.display = 'flex'; }" 
+               <img src="https://www.vianaar.com/images-vianaar/logo.svg" 
+                    onerror="if (!this.dataset.fallbackIndex) { this.dataset.fallbackIndex = '1'; this.src = '/assets/logo/logo.svg'; } else if (this.dataset.fallbackIndex === '1') { this.dataset.fallbackIndex = '2'; this.src = '/assets/logo/logo.png'; } else { this.style.display = 'none'; this.nextElementSibling.style.display = 'flex'; }" 
                     class="uploaded-logo-img" alt="${estate.name}" />
                <div class="fallback-v-logo flex items-center justify-center p-0.5">
                   <svg viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
