@@ -1,0 +1,6 @@
+{
+  "name": "Vianaar Presence in Goa Map",
+  "description": "An interactive map showcasing Vianaar's projects, homes, and municipal regions across Goa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

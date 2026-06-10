@@ -1,0 +1,20 @@
+<svg viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Perfectly horizontal cut for the tops of all stripes -->
+    <clipPath id="top-clip">
+      <rect x="0" y="70" width="400" height="280" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#top-clip)">
+    <!-- Stripe 0 (Innermost) -->
+    <path d="M 174 65 L 196 175 Q 200 195 204 175 L 226 65" stroke="#234D3B" stroke-width="5.8" stroke-linecap="square" />
+    <!-- Stripe 1 -->
+    <path d="M 164 65 L 186 175 Q 200 245 214 175 L 236 65" stroke="#234D3B" stroke-width="5.8" stroke-linecap="square" />
+    <!-- Stripe 2 -->
+    <path d="M 154 65 L 176 175 Q 200 295 224 175 L 246 65" stroke="#234D3B" stroke-width="5.8" stroke-linecap="square" />
+    <!-- Stripe 3 -->
+    <path d="M 144 65 L 166 175 Q 200 345 234 175 L 256 65" stroke="#234D3B" stroke-width="5.8" stroke-linecap="square" />
+    <!-- Stripe 4 (Outermost) -->
+    <path d="M 134 65 L 156 175 Q 200 395 244 175 L 266 65" stroke="#234D3B" stroke-width="5.8" stroke-linecap="square" />
+  </g>
+</svg>
